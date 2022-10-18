@@ -1,4 +1,12 @@
 # gRPCの速度比較(Go, Rust, Python)
+## 構成
+### フロントエンド
+* Typescript
+### バックエンド
+* Go
+* Rust
+* Python
+
 ## proto ファイル生成
 ### Go
 ```
