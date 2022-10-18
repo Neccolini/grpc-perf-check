@@ -1,0 +1,25 @@
+syntax = "proto3";
+package helloworld;
+
+option go_package = "pf/";
+
+service Greeter {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+    rpc Calc (CalcRequest) returns (CalcReply);
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloReply {
+    string message = 1;
+}
+
+message CalcRequest {
+    string password = 1;
+}
+
+message CalcReply {
+    int32 result = 1;
+}
