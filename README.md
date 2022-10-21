@@ -24,3 +24,23 @@ cargo buildで自動的に生成される
 ```
 $ python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. ./proto/pf.proto
 ```
+## サーバー起動
+### Go
+```
+$ go run main.go
+```
+### Rust
+```
+$ cargo run
+```
+
+### Python
+```
+$ python server.py
+```
+
+## クライアントプログラム実行
+### Typescript
+```
+$ npm run main
+```
